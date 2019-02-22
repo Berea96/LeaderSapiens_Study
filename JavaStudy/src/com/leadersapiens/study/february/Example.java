@@ -1,4 +1,4 @@
-package com.leadersapiens.study;
+package com.leadersapiens.study.february;
 
 import java.util.ArrayList;
 import java.util.List;
