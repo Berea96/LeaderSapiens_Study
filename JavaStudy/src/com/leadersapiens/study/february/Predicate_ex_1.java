@@ -36,6 +36,15 @@ class Apple {
     public void setColor(String color) {
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Apple{" +
+                "weight=" + weight +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
 
 interface ApplePredicate {
@@ -72,19 +81,35 @@ public class Predicate_ex_1 {
 
         System.out.println("\n===========================================\n");
 
-        List<Apple> appleList = new ArrayList<>();
+        List<Apple> inventory = new ArrayList<>();
 
-        appleList.add(new Apple(160, 1000, "red"));
-        appleList.add(new Apple(130, 1000, "blue"));
-        appleList.add(new Apple(120, 1000, "green"));
-        appleList.add(new Apple(170, 1000, "yellow"));
+        inventory.add(new Apple(160, 1000, "red"));
+        inventory.add(new Apple(130, 1000, "blue"));
+        inventory.add(new Apple(120, 1000, "green"));
+        inventory.add(new Apple(170, 1000, "yellow"));
 
         List<Apple> resultApple =
-            filterApplePredicate(appleList, new AppleHeavyWeightPredicate());
+            filterApplePredicate(inventory, new AppleHeavyWeightPredicate());
 
         for(Apple app : resultApple) {
             System.out.println(app.getColor());
         }
+
+        System.out.println("\n===========================================\n");
+
+        List<Apple> filterAnonymousPredicate = filterApplePredicate(inventory, new ApplePredicate() {
+            @Override
+            public boolean test(Apple apple) {
+                return "red".equals(apple.getColor());
+            }
+        });
+
+        for(Apple app : filterAnonymousPredicate) {
+            System.out.println(app.getColor());
+        }
+
+        List<Apple> filterLambdaPredicate = filterApplePredicate(inventory, (apple3) -> "red".equals(apple3.getColor()));
+        System.out.println(filterLambdaPredicate);
     }
 
 }
