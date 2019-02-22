@@ -30,7 +30,6 @@ public class StringLambda {
     public static void getLengthPlus(String str1, String str2, StringLengthPlus stringLengthPlus) {
         System.out.println("String1 Length : " + str1.length());
         System.out.println("String2 Length : " + str2.length());
-
         System.out.println("String Length Plus : " + stringLengthPlus.getLengthPlus(str1, str2));
     }
 
