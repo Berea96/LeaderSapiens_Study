@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/AppleLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leadersapiens/study/february/AppleLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/PredicateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leadersapiens/study/february/PredicateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate_ex_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate_ex_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,29 +21,7 @@
     <favorites_list name="JavaStudy" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/PredicateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,11 +40,12 @@
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/leadersapiens/study/Example.java" />
         <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/BigDecimal_ex_1.java" />
-        <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java" />
-        <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate_ex_1.java" />
         <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/AppleLambda.java" />
+        <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/Example.java" />
         <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java" />
+        <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate_ex_1.java" />
         <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/PredicateTest.java" />
+        <option value="$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java" />
       </list>
     </option>
   </component>
@@ -75,7 +60,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,13 +96,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550831950402" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551057181820" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -222,16 +207,17 @@
       <updated>1550820014284</updated>
       <workItem from="1550820019939" duration="2000" />
       <workItem from="1550820053279" duration="11831000" />
+      <workItem from="1551054449670" duration="2537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11833000" />
+    <option name="totallyTimeSpent" value="14370000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="696" y="0" width="846" height="830" extended-state="0" />
+    <frame x="696" y="0" width="847" height="831" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24936387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25540024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -241,7 +227,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32998565" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3295129" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.2553802" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -277,16 +263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/math/BigDecimal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-634">
@@ -294,24 +270,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/BigDecimal_ex_1.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/BigDecimal_ex_1.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/AppleLambda.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/Example.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+        <state relative-caret-position="95">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate_ex_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-371">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="95">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
@@ -320,31 +310,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/AppleLambda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#674#682#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/PredicateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="95">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>

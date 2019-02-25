@@ -1,7 +1,9 @@
 package com.leadersapiens.study.february;
 
-import java.util.List;
+//2019_02_22
 
 public interface Predicate<T> {
-    public boolean test(T t);
+    boolean test(T t);
 }
+
+

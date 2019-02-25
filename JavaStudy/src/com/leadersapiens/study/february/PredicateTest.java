@@ -3,6 +3,8 @@ package com.leadersapiens.study.february;
 import java.util.ArrayList;
 import java.util.List;
 
+//2019_02_22
+
 public class PredicateTest {
 
     public static <T> List<T> filter(List<T> list, Predicate<T> predicate) {

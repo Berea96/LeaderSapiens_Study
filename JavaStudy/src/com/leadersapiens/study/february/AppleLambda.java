@@ -3,6 +3,8 @@ package com.leadersapiens.study.february;
 import java.util.ArrayList;
 import java.util.List;
 
+//2019_02_22
+
 interface AppleObject {
     Apple getApple();
 }
