@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoge List page</title>
+</head>
+<body>
+    <dl th:each="hoge : ${hogeList}">
+        <dt>id</dt>
+        <dd th:text="${hoge.id}"></dd>
+
+        <dt>value</dt>
+        <dd th:text="${hoge.value}"></dd>
+    </dl>
+</body>
+</html>
