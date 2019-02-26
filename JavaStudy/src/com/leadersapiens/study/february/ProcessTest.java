@@ -16,6 +16,7 @@ public class ProcessTest {
                 System.out.println("이것은 익명 객체");
             }
         };
+
         Runnable r2 = () -> System.out.println("이것은 그냥 람다");
 
         process(r1);
