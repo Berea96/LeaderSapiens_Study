@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e5de2d-2f78-4574-88e0-a7dfc3a0348b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SpringBoot/telegramBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot/telegramBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot/telegramBot/src/com/leaderSapiens/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot/telegramBot/src/com/leaderSapiens/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,63 +24,18 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1694" />
-    <option name="y" value="26" />
-    <option name="width" value="1110" />
-    <option name="height" value="999" />
+    <option name="x" value="2117" />
+    <option name="y" value="32" />
+    <option name="width" value="1388" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LeaderSapiens_Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeaderSapiens_Study" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeaderSapiens_Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeaderSapiens_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeaderSapiens_Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeaderSapiens_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot" type="462c0819:PsiDirectoryNode" />
-              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeaderSapiens_Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeaderSapiens_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot" type="462c0819:PsiDirectoryNode" />
-              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeaderSapiens_Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeaderSapiens_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot" type="462c0819:PsiDirectoryNode" />
-              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeaderSapiens_Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeaderSapiens_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot" type="462c0819:PsiDirectoryNode" />
-              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="leaderSapiens" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -116,17 +70,18 @@
       <updated>1551169985980</updated>
       <workItem from="1551169987113" duration="3000" />
       <workItem from="1551234522697" duration="67000" />
+      <workItem from="1551269856912" duration="310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70000" />
+    <option name="totallyTimeSpent" value="380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1694" y="26" width="1110" height="999" extended-state="0" />
+    <frame x="1694" y="26" width="1110" height="882" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23876405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24380952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
