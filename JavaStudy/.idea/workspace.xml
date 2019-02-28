@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/META-INF/untitled104.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/Apple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/AppleHeavyWeightPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/AppleLambda.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/AppleObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/ApplePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/ApplePrint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/Example.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/ListEmpty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/Predicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/PredicateTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/Predicate_ex_1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/Predicate_ex_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/ProcessTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/ProcessTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/StringLambda.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/StringLength.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/StringLengthOver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/StringLengthPlus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/leadersapiens/study/february/StringPrint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/AppleLambda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Example.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/PredicateTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/Predicate_ex_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/ProcessTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leadersapiens/study/february/StringLambda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled104.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled104.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/telegramBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/telegramBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/telegramBot/out/production/telegramBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/telegramBot/out/production/telegramBot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/telegramBot/out/production/telegramBot/com/leaderSapiens/TestTelegram.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/telegramBot/out/production/telegramBot/com/leaderSapiens/TestTelegram.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/telegramBot/src/com/leaderSapiens/TestTelegram.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/telegramBot/src/com/leaderSapiens/TestTelegram.java" afterDir="false" />
     </list>
@@ -199,7 +166,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551342179445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551349396370" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -331,7 +298,7 @@
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3295129" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.25282168" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.25282168" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
