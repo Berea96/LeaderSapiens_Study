@@ -40,7 +40,7 @@ public class StringLambda {
 
         System.out.println("\n=================================\n");
 
-        getLengthOver("ThisLambda", (str) -> str.length() > 10);
+//        getLengthOver("ThisLambda", (str) -> str.length() > 10);
 
         System.out.println("\n=================================\n");
 

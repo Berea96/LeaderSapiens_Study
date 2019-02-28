@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc6a5eb3-630c-4599-856d-752212fb13f3" name="Default Changelist" comment="" />
+    <list default="true" id="dc6a5eb3-630c-4599-856d-752212fb13f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaStudy/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/META-INF/untitled104.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/AppleHeavyWeightPredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/AppleLambda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/AppleObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/ApplePredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/ApplePrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/Example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/ListEmpty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/Predicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/PredicateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/Predicate_ex_1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/Predicate_ex_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/ProcessTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/ProcessTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/StringLambda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/StringLength.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/StringLengthOver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/StringLengthPlus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/out/production/untitled104/com/leadersapiens/study/february/StringPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/AppleLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/Predicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/PredicateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/Predicate_ex_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/ProcessTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/src/com/leadersapiens/study/february/StringLambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaStudy/untitled104.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaStudy/untitled104.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/telegramBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/telegramBot/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="150">
+              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -23,13 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="233">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
                 <element signature="e#979#980#0" expanded="true" />
               </folding>
             </state>
@@ -74,7 +110,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="telegramBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="telegramBot" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="telegramBot" type="58d84e3e:PackageViewProjectNode" />
+              <item name="telegramBot" type="616d4139:PackageViewModuleNode" />
+              <item name="com.leaderSapiens" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,17 +196,19 @@
       <workItem from="1551168005636" duration="1247000" />
       <workItem from="1551171435974" duration="650000" />
       <workItem from="1551233383861" duration="664000" />
+      <workItem from="1551234572689" duration="1159000" />
+      <workItem from="1551314285123" duration="2781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5458000" />
+    <option name="totallyTimeSpent" value="9398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1696" y="25" width="1108" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14071295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444653" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -164,7 +217,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299435" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299435" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -195,23 +248,24 @@
     <entry file="file://$PROJECT_DIR$/telegramBot.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="150">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="233">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
           </folding>
         </state>
       </provider>
