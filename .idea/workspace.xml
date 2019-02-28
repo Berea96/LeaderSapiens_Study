@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e5de2d-2f78-4574-88e0-a7dfc3a0348b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SpringBoot/telegramBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot/telegramBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot/telegramBot/src/com/leaderSapiens/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot/telegramBot/src/com/leaderSapiens/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="69e5de2d-2f78-4574-88e0-a7dfc3a0348b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +32,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,7 +79,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,17 +113,17 @@
       <updated>1551169985980</updated>
       <workItem from="1551169987113" duration="3000" />
       <workItem from="1551234522697" duration="67000" />
+      <workItem from="1551313747199" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70000" />
+    <option name="totallyTimeSpent" value="72000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1694" y="26" width="1110" height="999" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23876405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2434457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
