@@ -13,6 +13,7 @@ import java.util.List;
 
 import static java.lang.Math.toIntExact;
 
+//텔레그렘 봇
 public class TestTelegram extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
