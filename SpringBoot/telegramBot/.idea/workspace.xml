@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc6a5eb3-630c-4599-856d-752212fb13f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../JavaStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/hoge.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/resources/templates/hoge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/hogeList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/resources/templates/hogeList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/telegramBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/telegramBot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/telegramBot/com/leaderSapiens/TestTelegram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/telegramBot/com/leaderSapiens/TestTelegram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leaderSapiens/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leaderSapiens/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="120">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,11 +35,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+            <state relative-caret-position="208">
+              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2804#2805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,6 +82,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -92,7 +99,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,17 +170,19 @@
       <workItem from="1551233383861" duration="664000" />
       <workItem from="1551234572689" duration="1159000" />
       <workItem from="1551314285123" duration="6972000" />
+      <workItem from="1551660946437" duration="1986000" />
+      <workItem from="1551676960025" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13589000" />
+    <option name="totallyTimeSpent" value="16174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1696" y="25" width="1108" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1444653" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15009381" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -216,8 +224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="120">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -226,11 +234,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leaderSapiens/TestTelegram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+        <state relative-caret-position="208">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2804#2805#0" expanded="true" />
           </folding>
         </state>
       </provider>

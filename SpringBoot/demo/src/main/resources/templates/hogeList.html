@@ -5,12 +5,12 @@
     <title>Hoge List page</title>
 </head>
 <body>
-    <dl th:each="hoge : ${hogeList}">
-        <dt>id</dt>
-        <dd th:text="${hoge.id}"></dd>
+<dl th:each="hoge : ${hogeList}">
+    <dt>id</dt>
+    <dd th:text="${hoge.id}"></dd>
 
-        <dt>value</dt>
-        <dd th:text="${hoge.value}"></dd>
-    </dl>
+    <dt>value</dt>
+    <dd th:text="${hoge.value}"></dd>
+</dl>
 </body>
 </html>

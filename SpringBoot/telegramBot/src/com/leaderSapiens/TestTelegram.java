@@ -23,14 +23,13 @@ public class TestTelegram extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
 
-        if(update.hasMessage() && update.getMessage().hasText()) {
+        if (update.hasMessage() && update.getMessage().hasText()) {
             try {
                 execute(sendMessage(update));
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
-        }
-        else if(update.hasCallbackQuery()) {
+        } else if (update.hasCallbackQuery()) {
             try {
                 execute(sendCallBackMessage(update));
             } catch (TelegramApiException e) {
