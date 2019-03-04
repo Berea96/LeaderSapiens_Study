@@ -3,7 +3,7 @@ package com.leadersapiens.study.march;
 import java.util.Timer;
 import java.util.TimerTask;
 
-//2019-03-04일자
+//2019-03-04
 public class TimerTaskTest {
 
     //반복된 횟수를 출력해주기위한 카운트

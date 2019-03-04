@@ -15,7 +15,7 @@ public class CrawlingServiceImpl implements CrawlingService {
         Document doc = null;
         try {
             doc = Jsoup.connect(url)
-                    .data("_", "1551670962530")
+                    .data("_", System.currentTimeMillis() + "")
                     .header("Referer", "https://www.oddsportal.com/soccer/algeria/ligue-1/oran-cr-belouizdad-E3UHKunj/?r=1")
                     .get();
 
