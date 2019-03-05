@@ -21,7 +21,7 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
-    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-drIMAWEU-1-2-yjab3.dat?_=" + System.currentTimeMillis() / 1000L;
+    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-drIMAWEU-5-3-yjf3d.dat?_=" + System.currentTimeMillis() / 1000L;
     static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
@@ -63,20 +63,22 @@ public class FootballScheduleParser extends TimerTask {
     }
 
     private void parsingData(String responseString) {
+        System.out.println(responseString);
         Map<String, Object> map = new HashMap<>();
         try {
             ObjectMapper mapper = new ObjectMapper();
 
-            String splitString = responseString.split("'/feed/match/1-1-drIMAWEU-1-2-yjab3.dat', ")[1].split("\\);")[0];
+            String splitString = responseString.split("dat', ")[1].split("\\);")[0];
 
             System.out.println(splitString);
-            map = mapper.readValue(splitString, new TypeReference<Map<Object, Object>>(){});
+            map = mapper.readValue(splitString, new TypeReference<Map<Object, Object>>() {
+            });
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for(String key : map.keySet()) {
-            System.out.println(map.get(key));
+        for (String key : map.keySet()) {
+            logger.debug(map.get(key));
         }
     }
 
