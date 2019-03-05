@@ -19,6 +19,7 @@ import java.util.TimerTask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+//2019-03-05
 public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
