@@ -5,6 +5,7 @@ package com.leadersapiens.rabbit;
 //import com.rabbitmq.client.ConnectionFactory;
 //import com.rabbitmq.client.DeliverCallback;
 
+//window엔 설치가 안 되어있음.
 public class Recv {
     private final static String QUEUE_NAME = "hello";
 

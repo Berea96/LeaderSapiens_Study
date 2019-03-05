@@ -4,6 +4,7 @@ package com.leadersapiens.rabbit;
 //import com.rabbitmq.client.Connection;
 //import com.rabbitmq.client.ConnectionFactory;
 
+//window엔 설치가 안 되어있음.
 public class Send {
     private final static String QUEUE_NAME = "hello";
 
