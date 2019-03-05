@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimerTask;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class FootballScheduleParser extends TimerTask {
 
@@ -65,6 +67,16 @@ public class FootballScheduleParser extends TimerTask {
     private void parsingData(String responseString) {
         System.out.println(responseString);
         Map<String, Object> map = new HashMap<>();
+
+        Pattern pattern = Pattern.compile("dat', ([a-z*]{1})");
+        Matcher matcher = pattern.matcher(responseString);
+
+        if(matcher.find()) {
+            System.out.println(matcher.group());
+        }
+        else {
+            System.out.println("안 된단말이다.");
+        }
         try {
             ObjectMapper mapper = new ObjectMapper();
 
