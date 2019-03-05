@@ -12,12 +12,13 @@ public class CrawlingServiceImpl implements CrawlingService {
     @Override
     public String getData() {
 
-        String url = "https://fb.oddsportal.com/feed/match/1-1-E3UHKunj-5-2-yjce6.dat";
+        String url = "https://fb.oddsportal.com/feed/match/1-1-drIMAWEU-1-2-yjab3.dat";
         Document doc = null;
         try {
             doc = Jsoup.connect(url)
-                    .data("_", System.currentTimeMillis() + "")
-                    .header("Referer", "https://www.oddsportal.com/soccer/algeria/ligue-1/oran-cr-belouizdad-E3UHKunj/?r=1")
+                    .data("_", System.currentTimeMillis() / 1000L + "")
+                    .header("Remote Address", "188.92.41.44:433")
+                    .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36")
                     .get();
 
         } catch (IOException e) {
