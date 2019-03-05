@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/setting.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_annotations_2_7_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/LogFourJTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/LogFourJTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/parserTest/FootballScheduleParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/parserTest/FootballScheduleParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled104.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled104.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/crawling/src/main/java/com/leadersapiens/crawling/study/CrawlingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/crawling/src/main/java/com/leadersapiens/crawling/study/CrawlingServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,8 +38,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="489" column="39" selection-start-line="489" selection-start-column="39" selection-end-line="489" selection-end-column="39" />
+                <state relative-caret-position="212">
+                  <caret line="482" column="39" selection-start-line="482" selection-start-column="39" selection-end-line="482" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -48,8 +47,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="733">
-                  <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+                <state relative-caret-position="688">
+                  <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -64,8 +63,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+                <state relative-caret-position="445">
+                  <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -121,8 +120,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/LogFourJTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Parsermain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -268,7 +267,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551779609280" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551779957158" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringBoot" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -387,18 +386,18 @@
       <workItem from="1551315132029" duration="8484000" />
       <workItem from="1551680380820" duration="4015000" />
       <workItem from="1551702609167" duration="1311000" />
-      <workItem from="1551746154698" duration="6530000" />
+      <workItem from="1551746154698" duration="6847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39688000" />
+    <option name="totallyTimeSpent" value="40005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1287" y="23" width="1593" height="1395" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13862024" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13862024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -409,7 +408,7 @@
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32844242" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.25234374" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.25234374" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -607,25 +606,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="489" column="39" selection-start-line="489" selection-start-column="39" selection-end-line="489" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="212">
+          <caret line="482" column="39" selection-start-line="482" selection-start-column="39" selection-end-line="482" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+        <state relative-caret-position="688">
+          <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
         </state>
       </provider>
     </entry>
