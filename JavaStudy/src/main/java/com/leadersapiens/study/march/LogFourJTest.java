@@ -3,6 +3,7 @@ package com.leadersapiens.study.march;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+//2019-03-04
 public class LogFourJTest {
 
     static Logger logger = Logger.getLogger(LogFourJTest.class.getName());
