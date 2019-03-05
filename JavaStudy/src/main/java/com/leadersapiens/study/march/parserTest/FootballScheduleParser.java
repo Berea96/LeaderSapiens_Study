@@ -69,11 +69,11 @@ public class FootballScheduleParser extends TimerTask {
         System.out.println(responseString);
         Map<String, Object> map = new HashMap<>();
 
-        Pattern pattern = Pattern.compile("dat', ([a-z*]{1})");
+        Pattern pattern = Pattern.compile("([a-z*])");
         Matcher matcher = pattern.matcher(responseString);
 
         if(matcher.find()) {
-            System.out.println(matcher.group());
+            System.out.println("통과!" + matcher.group());
         }
         else {
             System.out.println("안 된단말이다.");
