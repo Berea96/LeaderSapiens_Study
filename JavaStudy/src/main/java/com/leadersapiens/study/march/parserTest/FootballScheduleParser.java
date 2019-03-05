@@ -1,6 +1,7 @@
 package com.leadersapiens.study.march.parserTest;
 
 import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -12,6 +13,8 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TimerTask;
 
 public class FootballScheduleParser extends TimerTask {
@@ -60,11 +63,21 @@ public class FootballScheduleParser extends TimerTask {
     }
 
     private void parsingData(String responseString) {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
-        logger.debug(responseString);
+        Map<String, Object> map = new HashMap<>();
+        try {
+            ObjectMapper mapper = new ObjectMapper();
 
-        System.out.println(responseString);
+            String splitString = responseString.split("'/feed/match/1-1-drIMAWEU-1-2-yjab3.dat', ")[1].split("\\);")[0];
+
+            System.out.println(splitString);
+            map = mapper.readValue(splitString, new TypeReference<Map<Object, Object>>(){});
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for(String key : map.keySet()) {
+            System.out.println(map.get(key));
+        }
     }
 
     public static void main(String[] args) {
