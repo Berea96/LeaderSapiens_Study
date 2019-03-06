@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java" afterDir="false" />
-    </list>
+    <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+            <state relative-caret-position="514">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -110,8 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,6 +220,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,17 +354,18 @@
       <workItem from="1551790061823" duration="1980000" />
       <workItem from="1551792081876" duration="471000" />
       <workItem from="1551832540535" duration="6055000" />
+      <workItem from="1551868015186" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51481000" />
+    <option name="totallyTimeSpent" value="51528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="904" y="34" width="1976" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12668045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12771457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -579,8 +578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+        <state relative-caret-position="514">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
