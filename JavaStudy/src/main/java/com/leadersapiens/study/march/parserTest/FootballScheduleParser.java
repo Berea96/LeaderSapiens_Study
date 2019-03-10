@@ -24,7 +24,7 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
-    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-drIMAWEU-5-3-yjf3d.dat?_=" + System.currentTimeMillis() / 1000L;
+    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-drIMAWEU-5-3-yjf5c.dat?_=" + System.currentTimeMillis();
     static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
@@ -35,6 +35,9 @@ public class FootballScheduleParser extends TimerTask {
     private void parsingLiveGame() {
         //System.out.println("파싱시작");
         logger.debug("Parsing start");
+        logger.debug(nextGame);
+
+        logger.debug(System.getProperty("server_instance"));
 
         RequestConfig requestConfig = RequestConfig.custom()
                 .setConnectTimeout(10000)
@@ -48,8 +51,8 @@ public class FootballScheduleParser extends TimerTask {
         int responseCode = 0;
 
         HttpGet httpGet = new HttpGet(nextGame);
-        httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/mexico/liga-mx-women-2018-2019/toluca-club-america-drIMAWEU/");
-        httpGet.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36");
+        httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/mexico/liga-mx-women-2018-2019/toluca-club-america-drIMAWEU/?r=2");
+        httpGet.addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
 
         HttpResponse httpResponse = null;
         try {
@@ -69,11 +72,11 @@ public class FootballScheduleParser extends TimerTask {
         System.out.println(responseString);
         Map<String, Object> map = new HashMap<>();
 
-        Pattern pattern = Pattern.compile("([a-z*])");
+        Pattern pattern = Pattern.compile("dat', (\\{.+\\}){1}\\);");
         Matcher matcher = pattern.matcher(responseString);
 
         if(matcher.find()) {
-            System.out.println("통과!" + matcher.group());
+            System.out.println("통과!" + matcher.group(1));
         }
         else {
             System.out.println("안 된단말이다.");
