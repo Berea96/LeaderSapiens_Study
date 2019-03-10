@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leadersapiens/rabbit/Recv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leadersapiens/rabbit/Recv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leadersapiens/rabbit/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leadersapiens/rabbit/Send.java" afterDir="false" />
-    </list>
+    <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +81,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="805" />
     <option name="width" value="1120" />
-    <option name="height" value="1039" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -92,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -205,7 +203,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,16 +334,17 @@
       <workItem from="1551746154698" duration="9817000" />
       <workItem from="1551790061823" duration="1980000" />
       <workItem from="1551792081876" duration="471000" />
+      <workItem from="1552219645109" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45426000" />
+    <option name="totallyTimeSpent" value="45435000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="644" y="0" width="896" height="831" extended-state="0" />
+    <frame x="644" y="0" width="896" height="832" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2236842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22966507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
