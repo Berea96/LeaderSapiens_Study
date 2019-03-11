@@ -18,7 +18,7 @@ import java.util.TimerTask;
  * oddsportal사이트에서의 배팅사이트 정보를 가져오는 클래스
  */
 public class OddsportalSitesParser extends TimerTask {
-    private static Logger logger = new Logger(OddsportalSitesParser.class.getName());
+    private static Logger logger = Logger.getLogger(OddsportalSitesParser.class.getName());
 
     static final String url = "https://www.oddsportal.com/res/x/bookies-190305102620-1552279100.js";
 
