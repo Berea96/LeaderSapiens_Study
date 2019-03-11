@@ -33,6 +33,7 @@ public class FootballScheduleParser extends TimerTask {
         parsingLiveGame();
     }
 
+    //데이터를 파싱해 오는 메소드
     private void parsingLiveGame() {
         //System.out.println("파싱시작");
         logger.debug("Parsing start");
