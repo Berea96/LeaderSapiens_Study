@@ -3,6 +3,19 @@ package com.leadersapiens.study.march.parserTest;
 //Oddsportal bookmaker에 대한 Bean
 public class Bookmaker {
     private String idProvider;
-    private String WebName;
-    private String WebUrl;
+    private String webName;
+    private String webUrl;
+    private String isBookmaker;
+    private String isBettingExchange;
+    private String url;
+    private String defaultBetslipUrl;
+    private String active;
+    private String newTo;
+    private String setNew;
+    private String preferredCountryId;
+    private String sr;
+    private String isPremium;
+    private String sortKey;
+    private String isNew;
+    private Bonus bonus;
 }
