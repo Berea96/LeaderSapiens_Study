@@ -25,7 +25,7 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
-    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-drIMAWEU-5-3-yjf5c.dat?_=" + System.currentTimeMillis();
+    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-xUeJGqJk-2-2-yjcbf.dat?_=" + System.currentTimeMillis();
     static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
@@ -53,7 +53,7 @@ public class FootballScheduleParser extends TimerTask {
         int responseCode = 0;
 
         HttpGet httpGet = new HttpGet(nextGame);
-        httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/mexico/liga-mx-women-2018-2019/toluca-club-america-drIMAWEU/?r=2");
+        httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/cameroon/elite-one/dragon-de-yaounde-apejes-academy-xUeJGqJk/");
         httpGet.addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
 
         HttpResponse httpResponse = null;
@@ -107,3 +107,48 @@ public class FootballScheduleParser extends TimerTask {
         timer1.scheduleAtFixedRate(footballScheduleParser, 0, 1000 * 10);
     }
 }
+
+/**
+ * oddzpotal 배팅사이트에 따른 id값
+ * 14 = 10Bet
+ * 80 = 12Bet
+ * 424 = 138
+ * 56 = 188BET
+ * 416 = 18Bet
+ * 417 = 1xBet
+ * 471 = 1xBet.kz
+ * 453 = 1xStavka.ru
+ * 500 = 22Bet
+ * 154 = 32Red Bet
+ * 20 = 5Dimes
+ * 422 = 5plusbet
+ * 27 = 888sport
+ * 388 = 90dakika
+ * 369 = Admiral
+ * 146 = AllYouBet
+ * 476 = Asianodds
+ * 469 = Babibet
+ * 488 = Bahis Arena
+ * 127 = Bestake
+ * 125 = Bestbet
+ * 137 = Bet Victor
+ * 436 = Bet-52
+ * 3 = bet-at-home
+ * 384 = bet-at-home.it
+ * 459 = Bet.pt
+ * 367 = Bet1128.it
+ * 54 = Bet24
+ * 412 = BET2Be
+ * 16 = bet365
+ * 419 = bet365.it
+ * 115 = Bet770
+ * 86 = Bet7days
+ * 405 = Bet9
+ * 123 = Bet911
+ * 509 = Bet9ja
+ * 421 = Betadonis
+ * 171 = Betako
+ * 464 = Bethard
+ * 2 = bwin
+ * ...
+ */
