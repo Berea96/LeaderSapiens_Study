@@ -13,6 +13,8 @@ import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * oddsportal사이트에서의 배팅사이트 정보를 가져오는 클래스
@@ -31,6 +33,15 @@ public class OddsportalSitesParser extends TimerTask {
         ObjectMapper mapper = new ObjectMapper();
 
         String getBody = getHtmlBody();
+
+        Matcher matcher = Pattern.compile("var bookmakersData = \\{(.*)\\}").matcher(getBody);
+
+        if(matcher.find()) {
+            System.out.println("불통..");
+        } else {
+            System.out.println("통과");
+            System.out.println(matcher);
+        }
     }
 
     public String getHtmlBody() {

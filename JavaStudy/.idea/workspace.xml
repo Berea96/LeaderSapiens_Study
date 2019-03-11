@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dd4ca4-0772-4686-b718-1a59d2e1ebe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/parserTest/Bonus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/parserTest/Bookmaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bookmaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bookmaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
+            <state relative-caret-position="361">
               <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,19 +52,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bookmaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,9 +107,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/rabbit/Send.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/rabbit/Recv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bookmaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java" />
       </list>
     </option>
   </component>
@@ -256,7 +249,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552312065373" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552312428727" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -281,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FootballScheduleParser">
+  <component name="RunManager" selected="Application.OddsportalSitesParser">
     <configuration name="FootballScheduleParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leadersapiens.study.march.parserTest.FootballScheduleParser" />
       <module name="untitled104" />
@@ -308,8 +301,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leadersapiens.study.march.parserTest.ParserMain" />
+    <configuration name="OddsportalSitesParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leadersapiens.study.march.parserTest.OddsportalSitesParser" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
@@ -321,12 +314,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leadersapiens.rabbit.Recv" />
+    <configuration name="ParserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leadersapiens.study.march.parserTest.ParserMain" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leadersapiens.rabbit.*" />
+          <option name="PATTERN" value="com.leadersapiens.study.march.parserTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -349,11 +342,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OddsportalSitesParser" />
         <item itemvalue="Application.FootballScheduleParser" />
         <item itemvalue="Application.ParserMain" />
         <item itemvalue="Application.LogFourJTest" />
         <item itemvalue="Application.TimerTaskTest" />
-        <item itemvalue="Application.Recv" />
       </list>
     </recent_temporary>
   </component>
@@ -383,12 +376,12 @@
       <workItem from="1552220457465" duration="400000" />
       <workItem from="1552264247351" duration="6478000" />
       <workItem from="1552309635049" duration="1956000" />
-      <workItem from="1552311651162" duration="411000" />
+      <workItem from="1552311651162" duration="771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60773000" />
+    <option name="totallyTimeSpent" value="61133000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,18 +396,18 @@
     <frame x="494" y="0" width="1047" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26139817" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26139817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32951653" />
-      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.32664755" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.103151865" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32844242" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.043041606" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.44555873" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -624,26 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bonus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -653,8 +626,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/Bookmaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="38">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/FootballScheduleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leadersapiens/study/march/parserTest/OddsportalSitesParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
