@@ -34,7 +34,9 @@ public class OddsportalSitesParser extends TimerTask {
 
         String getBody = getHtmlBody();
 
-        Matcher matcher = Pattern.compile("var bookmakersData = \\{(.*)\\}").matcher(getBody);
+        System.out.println(getBody);
+
+        Matcher matcher = Pattern.compile("var bookmakersData = \\{(\\{.*\\}){1,}\\};").matcher(getBody);
 
         if(matcher.find()) {
             System.out.println("불통..");
