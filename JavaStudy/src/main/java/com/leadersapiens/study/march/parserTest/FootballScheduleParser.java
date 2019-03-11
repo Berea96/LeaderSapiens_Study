@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
 import java.util.TimerTask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -99,6 +100,9 @@ public class FootballScheduleParser extends TimerTask {
     }
 
     public static void main(String[] args) {
-        new FootballScheduleParser().parsingLiveGame();
+        FootballScheduleParser footballScheduleParser = new FootballScheduleParser();
+        Timer timer1 = new Timer();
+
+        timer1.scheduleAtFixedRate(footballScheduleParser, 0, 1000 * 10);
     }
 }
