@@ -1,5 +1,6 @@
 package com.leadersapiens.study.march.parserTest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -27,7 +28,7 @@ public class OddsportalSitesParser extends TimerTask {
     }
 
     public void oddsportalParser() {
-
+        ObjectMapper mapper = new ObjectMapper();
 
         String getBody = getHtmlBody();
     }
