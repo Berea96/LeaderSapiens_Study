@@ -8,7 +8,7 @@ import java.util.TimerTask;
  */
 public class OddsportalSitesParser extends TimerTask {
 
-    private String url = "";
+    private String url = "https://www.oddsportal.com/res/x/bookies-190305102620-1552279100.js";
 
     @Override
     public void run() {
