@@ -11,6 +11,7 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.regex.Matcher;
@@ -22,7 +23,9 @@ import java.util.regex.Pattern;
 public class OddsportalSitesParser extends TimerTask {
     private static Logger logger = Logger.getLogger(OddsportalSitesParser.class.getName());
 
-    static final String url = "https://www.oddsportal.com/res/x/bookies-190305102620-1552279100.js";
+    private ArrayList<Bookmaker> bookmakers = new ArrayList<>();
+
+    static final String url = "https://www.oddsportal.com/res/x/bookies-190305102620-" + System.currentTimeMillis() + ".js";
 
     @Override
     public void run() {

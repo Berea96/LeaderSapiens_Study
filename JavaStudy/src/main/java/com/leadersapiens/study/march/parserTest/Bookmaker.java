@@ -1,6 +1,9 @@
 package com.leadersapiens.study.march.parserTest;
 
+import lombok.Data;
+
 //Oddsportal bookmaker에 대한 Bean
+@Data
 public class Bookmaker {
     private String idProvider;
     private String webName;
