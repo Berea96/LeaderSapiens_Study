@@ -39,7 +39,7 @@ public class OddsportalSitesParser extends TimerTask {
 
         System.out.println(getBody);
 
-        Matcher matcher = Pattern.compile("var bookmakersData = \\{(\\{.*\\}){1,}\\};").matcher(getBody);
+        Matcher matcher = Pattern.compile("var bookmakersData=(\\{.+\\}){1}.+").matcher(getBody);
 
         if(matcher.find()) {
             System.out.println("불통..");
@@ -62,6 +62,8 @@ public class OddsportalSitesParser extends TimerTask {
         String responseString = "";
 
         HttpGet httpGet = new HttpGet(url);
+        httpGet.addHeader("referer", "https://www.oddsportal.com/bookmaker/1xbet");
+        httpGet.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
 
         HttpResponse httpResponse = null;
 

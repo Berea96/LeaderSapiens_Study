@@ -54,7 +54,7 @@ public class FootballScheduleParser extends TimerTask {
 
         HttpGet httpGet = new HttpGet(nextGame);
         httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/cameroon/elite-one/dragon-de-yaounde-apejes-academy-xUeJGqJk/");
-        httpGet.addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+        httpGet.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
 
         HttpResponse httpResponse = null;
         try {
@@ -74,7 +74,7 @@ public class FootballScheduleParser extends TimerTask {
         System.out.println(responseString);
         Map<String, Object> map = new HashMap<>();
 
-        Pattern pattern = Pattern.compile("dat', (\\{.+\\}){1}\\);");
+        Pattern pattern = Pattern.compile("dat', (\\{.+\\}){1}.+");
         Matcher matcher = pattern.matcher(responseString);
 
         if(matcher.find()) {
