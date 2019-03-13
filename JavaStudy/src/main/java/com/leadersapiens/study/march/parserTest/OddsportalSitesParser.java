@@ -41,7 +41,7 @@ public class OddsportalSitesParser extends TimerTask {
 
         Matcher matcher = Pattern.compile("var bookmakersData=(\\{.+\\}){1}.+").matcher(getBody);
 
-        if(matcher.find()) {
+        if(!matcher.find()) {
             System.out.println("불통..");
         } else {
             System.out.println("통과");
