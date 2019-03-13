@@ -18,6 +18,7 @@ import org.apache.log4j.Logger;
 import java.awt.print.Book;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.regex.Matcher;
@@ -57,14 +58,18 @@ public class OddsportalSitesParser extends TimerTask {
             System.out.println(matcher.group(1));
         }
 
-        Bookmaker bookmaker = null;
+//        Bookmaker bookmaker = null;
+        HashMap<String, String> map = null;
         try {
-            bookmaker = mapper.readValue(matcher.group(1), Bookmaker.class);
+//            bookmaker = mapper.readValue(matcher.group(1), Bookmaker.class);
+            map = mapper.readValue(matcher.group(1), new TypeReference<HashMap<Object, Object>>(){});
+//            bookmakers = mapper.readValue(matcher.group(1), new TypeReference<ArrayList<Object>>(){});
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        System.out.println(bookmaker);
+        System.out.println(map);
+//        System.out.println(bookmakers);
     }
 
     public String getHtmlBody() {

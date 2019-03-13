@@ -5,7 +5,7 @@ import lombok.Data;
 
 //Oddsportal bookmaker에 대한 bean
 @Data
-//@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Bookmaker {
     private String idProvider;
     private String WebName;
