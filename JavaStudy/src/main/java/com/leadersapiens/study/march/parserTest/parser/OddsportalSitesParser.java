@@ -59,7 +59,7 @@ public class OddsportalSitesParser extends TimerTask {
 
         Bookmaker bookmaker = null;
         try {
-            bookmaker = mapper.readValue(matcher.group(1), new TypeReference<Bookmaker>(){});
+            bookmaker = mapper.readValue(matcher.group(1), Bookmaker.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
