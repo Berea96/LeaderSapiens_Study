@@ -1,6 +1,5 @@
-package com.leadersapiens.study.march.parserTest;
+package com.leadersapiens.study.march.parserTest.parser;
 
-import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpEntity;

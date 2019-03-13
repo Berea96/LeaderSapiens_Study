@@ -1,4 +1,4 @@
-package com.leadersapiens.study.march.parserTest;
+package com.leadersapiens.study.march.parserTest.bean;
 
 import lombok.Data;
 
