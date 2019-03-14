@@ -3,6 +3,7 @@ package com.leadersapiens.study.march.parserTest.parser;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.leadersapiens.study.march.parserTest.bean.schedule.Schedule;
 import com.leadersapiens.study.march.parserTest.crawling.CrawlingMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -26,10 +27,10 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
-    private Map<String, String> scheduleMap = new HashMap<>();
+    private Map<String, Schedule> scheduleMap = new HashMap<>();
 
-    static final String nextGame = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190314/1/yj78e.dat?_=" + System.currentTimeMillis();
-    static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
+    private String nextGame = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190314/1/yjdfa.dat?_=" + System.currentTimeMillis();
+    private String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
     public void run() {
@@ -53,6 +54,8 @@ public class FootballScheduleParser extends TimerTask {
 
             String responseString = CrawlingMain.getBody(nextGame, headerMap);
 
+            responseString = responseString.replace("\"", "'");
+
             parsingData(responseString);
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,10 +64,8 @@ public class FootballScheduleParser extends TimerTask {
 
     private void parsingData(String responseString) {
         logger.debug(responseString);
-        Map<String, Object> map = new HashMap<>();
 
-        Pattern pattern = Pattern.compile("dat', (\\{.+\\}){1}.+");
-        Matcher matcher = pattern.matcher(responseString);
+        Matcher matcher = Pattern.compile("'oddsData':\\{('.+':\\{.+\\})\\}{1}.+").matcher(responseString);
 
         if(matcher.find()) {
             logger.debug("통과!" + matcher.group(1));
@@ -75,9 +76,9 @@ public class FootballScheduleParser extends TimerTask {
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
 
-            map = mapper.readValue(matcher.group(1), new TypeReference<Map<Object, Object>>() {});
+            scheduleMap = mapper.readValue(matcher.group(1), new TypeReference<Map<Object, Schedule>>() {});
 
-            logger.debug(map);
+            logger.debug(scheduleMap);
 
         } catch (IOException e) {
             e.printStackTrace();

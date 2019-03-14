@@ -6,5 +6,5 @@ import lombok.ToString;
 @Data
 @ToString
 public class Event {
-    private String eventID;
+    private int eventId;
 }
