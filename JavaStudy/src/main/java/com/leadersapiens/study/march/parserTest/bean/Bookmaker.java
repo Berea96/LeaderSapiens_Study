@@ -24,5 +24,5 @@ public class Bookmaker {
     private String IsPremium;
     private int sortKey;
     private boolean isNew;
-//    private Bonus bonus;
+    private Bonus bonus;
 }

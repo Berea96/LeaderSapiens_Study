@@ -2,6 +2,7 @@ package com.leadersapiens.study.march.parserTest.parser;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.leadersapiens.study.march.parserTest.crawling.CrawlingMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -24,47 +25,30 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
-    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-xUeJGqJk-2-2-yjcbf.dat?_=" + System.currentTimeMillis();
+
+    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-nuNxpxG8-1-2-yja13.dat?_=" + System.currentTimeMillis();
     static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
     public void run() {
-        parsingLiveGame();
+        crawlerLiveGameCrawling();
     }
 
     //데이터를 파싱해 오는 메소드
-    private void parsingLiveGame() {
+    private void crawlerLiveGameCrawling() {
         //System.out.println("파싱시작");
         logger.debug("Parsing start");
         logger.debug(nextGame);
 
         logger.debug(System.getProperty("server_instance"));
 
-        RequestConfig requestConfig = RequestConfig.custom()
-                .setConnectTimeout(10000)
-                .setSocketTimeout(15000).build();
+        Map<String, String> headerMap = new HashMap<>();
 
-        HttpClient httpClient = HttpClients.custom()
-                .setDefaultRequestConfig(requestConfig)
-                .build();
+        headerMap.put("Referer", "https://www.oddsportal.com/soccer/jamaica/premier-league-2018-2019/arnett-gardens-fc-dunbeholden-nuNxpxG8/");
+//        headerMap.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+        headerMap.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
 
-        String responseString = null;
-        int responseCode = 0;
-
-        HttpGet httpGet = new HttpGet(nextGame);
-        httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/cameroon/elite-one/dragon-de-yaounde-apejes-academy-xUeJGqJk/");
-        httpGet.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
-
-        HttpResponse httpResponse = null;
-        try {
-            httpResponse = httpClient.execute(httpGet);
-
-            HttpEntity httpEntity = httpResponse.getEntity();
-
-            responseString = EntityUtils.toString(httpEntity);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        String responseString = CrawlingMain.getBody(nextGame, headerMap);
 
         parsingData(responseString);
     }

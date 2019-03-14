@@ -6,6 +6,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.leadersapiens.study.march.parserTest.bean.Bookmaker;
 import com.leadersapiens.study.march.parserTest.bean.Bookmakers;
+import com.leadersapiens.study.march.parserTest.crawling.CrawlingMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -17,10 +18,7 @@ import org.apache.log4j.Logger;
 
 import java.awt.print.Book;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,26 +29,34 @@ import java.util.regex.Pattern;
 public class OddsportalSitesParser extends TimerTask {
     private static Logger logger = Logger.getLogger(OddsportalSitesParser.class.getName());
 
-    private ArrayList<Bookmaker> bookmakers = new ArrayList<>();
+    private Map<String, Bookmaker> bookmakerMap = new HashMap<>();
 
-    private static final String url = "https://www.oddsportal.com/res/x/bookies-190305102620-" + System.currentTimeMillis() + ".js";
+    private String url = "https://www.oddsportal.com/res/x/bookies-190305102620-" + System.currentTimeMillis() + ".js";
 
     @Override
     public void run() {
-        oddsportalParser();
+        crawlingBookmakerCrawler();
     }
 
-    public void oddsportalParser() {
+    public void crawlingBookmakerCrawler() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
 
-        String getBody = getHtmlBody();
+        Map<String, String> headerMap = new HashMap<String, String>();
+
+        headerMap.put("referer", "https://www.oddsportal.com/bookmaker/1xbet");
+        headerMap.put("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+
+        String getBody = CrawlingMain.getBody(url, headerMap);
 
         System.out.println(getBody);
 
         getBody = getBody.replace("\"", "'");
+        getBody = getBody.replace("\\\\", "\\");
 
-        Matcher matcher = Pattern.compile("var bookmakersData=\\{'.+':(\\{.+\\}){1,}\\}.+").matcher(getBody);
+        System.out.println(getBody);
+
+        Matcher matcher = Pattern.compile("var bookmakersData=(\\{('.+':\\{.+\\}){1,}\\}).+").matcher(getBody);
 
         if(!matcher.find()) {
             System.out.println("불통..");
@@ -60,50 +66,17 @@ public class OddsportalSitesParser extends TimerTask {
             System.out.println(matcher.group(1));
         }
 
-//        Bookmaker bookmaker = null;
-        HashMap<String, String> map = null;
         try {
-//            bookmaker = mapper.readValue(matcher.group(1), Bookmaker.class);
-            map = mapper.readValue(matcher.group(1), new TypeReference<HashMap<Object, Object>>(){});
-//            bookmakers = mapper.readValue(matcher.group(1), new TypeReference<ArrayList<Object>>(){});
+            bookmakerMap = mapper.readValue(matcher.group(1), new TypeReference<Map<Object, Bookmaker>>(){});
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        System.out.println(map);
-//        System.out.println(bookmakers);
+        System.out.println(bookmakerMap);
     }
 
-    public String getHtmlBody() {
+    public void oddsportalParser() {
 
-        RequestConfig requestConfig = RequestConfig.custom()
-                .setConnectTimeout(10000)
-                .setSocketTimeout(15000).build();
-
-        HttpClient httpClient = HttpClients.custom()
-                .setDefaultRequestConfig(requestConfig)
-                .build();
-
-        String responseString = "";
-
-        HttpGet httpGet = new HttpGet(url);
-        httpGet.addHeader("referer", "https://www.oddsportal.com/bookmaker/1xbet");
-        httpGet.addHeader("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
-
-        HttpResponse httpResponse = null;
-
-        try {
-            httpResponse = httpClient.execute(httpGet);
-
-            HttpEntity httpEntity = httpResponse.getEntity();
-
-            responseString = EntityUtils.toString(httpEntity);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return responseString;
     }
 
     public static void main(String[] args) {
