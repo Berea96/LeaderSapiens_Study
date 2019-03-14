@@ -10,6 +10,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class CrawlingMain {
     public static String getBody(String url, Map<String, String> headerMap) throws Exception {
@@ -24,6 +25,7 @@ public class CrawlingMain {
         String responseString = "";
 
         HttpGet httpGet = new HttpGet(url);
+
         for(String keySet : headerMap.keySet()) {
             httpGet.addHeader(keySet, headerMap.get(keySet));
         }
