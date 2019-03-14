@@ -1,7 +1,10 @@
 package com.leadersapiens.study.march.parserTest.parser;
 
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.leadersapiens.study.march.parserTest.bean.schedule.Schedule;
+import com.leadersapiens.study.march.parserTest.crawling.CrawlingMain;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -24,78 +27,61 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
-    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-xUeJGqJk-2-2-yjcbf.dat?_=" + System.currentTimeMillis();
-    static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
+    private Map<String, Schedule> scheduleMap = new HashMap<>();
+
+    private String nextGame = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190314/1/yjdfa.dat?_=" + System.currentTimeMillis();
+    private String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
     public void run() {
-        parsingLiveGame();
+        crawlerLiveGameCrawling();
     }
 
     //데이터를 파싱해 오는 메소드
-    private void parsingLiveGame() {
-        //System.out.println("파싱시작");
-        logger.debug("Parsing start");
-        logger.debug(nextGame);
-
-        logger.debug(System.getProperty("server_instance"));
-
-        RequestConfig requestConfig = RequestConfig.custom()
-                .setConnectTimeout(10000)
-                .setSocketTimeout(15000).build();
-
-        HttpClient httpClient = HttpClients.custom()
-                .setDefaultRequestConfig(requestConfig)
-                .build();
-
-        String responseString = null;
-        int responseCode = 0;
-
-        HttpGet httpGet = new HttpGet(nextGame);
-        httpGet.addHeader("Referer", "https://www.oddsportal.com/soccer/cameroon/elite-one/dragon-de-yaounde-apejes-academy-xUeJGqJk/");
-        httpGet.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
-
-        HttpResponse httpResponse = null;
+    private void crawlerLiveGameCrawling() {
         try {
-            httpResponse = httpClient.execute(httpGet);
+            //System.out.println("파싱시작");
+            logger.debug("Parsing start");
+            logger.debug(nextGame);
 
-            HttpEntity httpEntity = httpResponse.getEntity();
+            logger.debug(System.getProperty("server_instance"));
 
-            responseString = EntityUtils.toString(httpEntity);
-        } catch (IOException e) {
+            Map<String, String> headerMap = new HashMap<>();
+
+            headerMap.put("Referer", "https://www.oddsportal.com/matches/");
+    //        headerMap.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+            headerMap.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+
+            String responseString = CrawlingMain.getBody(nextGame, headerMap);
+
+            responseString = responseString.replace("\"", "'");
+
+            parsingData(responseString);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
-        parsingData(responseString);
     }
 
     private void parsingData(String responseString) {
-        System.out.println(responseString);
-        Map<String, Object> map = new HashMap<>();
+        logger.debug(responseString);
 
-        Pattern pattern = Pattern.compile("dat', (\\{.+\\}){1}.+");
-        Matcher matcher = pattern.matcher(responseString);
+        Matcher matcher = Pattern.compile("'oddsData':\\{('.+':\\{.+\\})\\}{1}.+").matcher(responseString);
 
         if(matcher.find()) {
-            System.out.println("통과!" + matcher.group(1));
-        }
-        else {
-            System.out.println("안 된단말이다.");
+            logger.debug("통과!" + matcher.group(1));
+        } else {
+            logger.debug("안 된단말이다.");
         }
         try {
             ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
 
-            String splitString = responseString.split("dat', ")[1].split("\\);")[0];
+            scheduleMap = mapper.readValue(matcher.group(1), new TypeReference<Map<Object, Schedule>>() {});
 
-            System.out.println(splitString);
-            map = mapper.readValue(splitString, new TypeReference<Map<Object, Object>>() {
-            });
+            logger.debug(scheduleMap);
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        for (String key : map.keySet()) {
-            logger.debug(map.get(key));
         }
     }
 
