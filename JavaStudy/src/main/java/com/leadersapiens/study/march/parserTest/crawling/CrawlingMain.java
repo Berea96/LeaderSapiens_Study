@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Map;
 
 public class CrawlingMain {
-    public static String getBody(String url, Map<String, String> headerMap) {
+    public static String getBody(String url, Map<String, String> headerMap) throws Exception {
         RequestConfig requestConfig = RequestConfig.custom()
                 .setConnectTimeout(10000)
                 .setSocketTimeout(15000).build();

@@ -39,40 +39,42 @@ public class OddsportalSitesParser extends TimerTask {
     }
 
     public void crawlingBookmakerCrawler() {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
-
-        Map<String, String> headerMap = new HashMap<String, String>();
-
-        headerMap.put("referer", "https://www.oddsportal.com/bookmaker/1xbet");
-        headerMap.put("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
-
-        String getBody = CrawlingMain.getBody(url, headerMap);
-
-        System.out.println(getBody);
-
-        getBody = getBody.replace("\"", "'");
-        getBody = getBody.replace("\\\\", "\\");
-
-        System.out.println(getBody);
-
-        Matcher matcher = Pattern.compile("var bookmakersData=(\\{('.+':\\{.+\\}){1,}\\}).+").matcher(getBody);
-
-        if(!matcher.find()) {
-            System.out.println("불통..");
-            return;
-        } else {
-            System.out.println("통과");
-            System.out.println(matcher.group(1));
-        }
+        logger.info("odds portal bookmaker crawling start");
 
         try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
+
+            Map<String, String> headerMap = new HashMap<String, String>();
+
+            headerMap.put("referer", "https://www.oddsportal.com/bookmaker/1xbet");
+            headerMap.put("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+
+            String getBody = CrawlingMain.getBody(url, headerMap);
+
+            logger.debug(getBody);
+
+            getBody = getBody.replace("\"", "'");
+            getBody = getBody.replace("\\\\", "\\");
+
+            logger.debug(getBody);
+
+            Matcher matcher = Pattern.compile("var bookmakersData=(\\{('.+':\\{.+\\}){1,}\\}).+").matcher(getBody);
+
+            if(!matcher.find()) {
+                logger.debug("불통..");
+                return;
+            } else {
+                logger.debug("통과");
+                logger.debug(matcher.group(1));
+            }
+
             bookmakerMap = mapper.readValue(matcher.group(1), new TypeReference<Map<Object, Bookmaker>>(){});
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
-        System.out.println(bookmakerMap);
+        logger.debug(bookmakerMap);
     }
 
     public void oddsportalParser() {

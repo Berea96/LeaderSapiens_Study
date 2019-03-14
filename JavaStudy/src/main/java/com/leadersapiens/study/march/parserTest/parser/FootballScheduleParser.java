@@ -1,5 +1,6 @@
 package com.leadersapiens.study.march.parserTest.parser;
 
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.leadersapiens.study.march.parserTest.crawling.CrawlingMain;
@@ -25,8 +26,9 @@ public class FootballScheduleParser extends TimerTask {
 
     private static Logger logger = Logger.getLogger(FootballScheduleParser.class.getName());
 
+    private Map<String, String> scheduleMap = new HashMap<>();
 
-    static final String nextGame = "https://fb.oddsportal.com/feed/match/1-1-nuNxpxG8-1-2-yja13.dat?_=" + System.currentTimeMillis();
+    static final String nextGame = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190314/1/yj78e.dat?_=" + System.currentTimeMillis();
     static final String nextGameOdds = "https://fb.oddsportal.com/ajax-next-games-odds/1/0/X0/20190305/1/yj9d4.dat?_=" + System.currentTimeMillis() / 1000L;
 
     @Override
@@ -36,50 +38,49 @@ public class FootballScheduleParser extends TimerTask {
 
     //데이터를 파싱해 오는 메소드
     private void crawlerLiveGameCrawling() {
-        //System.out.println("파싱시작");
-        logger.debug("Parsing start");
-        logger.debug(nextGame);
+        try {
+            //System.out.println("파싱시작");
+            logger.debug("Parsing start");
+            logger.debug(nextGame);
 
-        logger.debug(System.getProperty("server_instance"));
+            logger.debug(System.getProperty("server_instance"));
 
-        Map<String, String> headerMap = new HashMap<>();
+            Map<String, String> headerMap = new HashMap<>();
 
-        headerMap.put("Referer", "https://www.oddsportal.com/soccer/jamaica/premier-league-2018-2019/arnett-gardens-fc-dunbeholden-nuNxpxG8/");
-//        headerMap.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
-        headerMap.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+            headerMap.put("Referer", "https://www.oddsportal.com/matches/");
+    //        headerMap.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+            headerMap.put("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
 
-        String responseString = CrawlingMain.getBody(nextGame, headerMap);
+            String responseString = CrawlingMain.getBody(nextGame, headerMap);
 
-        parsingData(responseString);
+            parsingData(responseString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void parsingData(String responseString) {
-        System.out.println(responseString);
+        logger.debug(responseString);
         Map<String, Object> map = new HashMap<>();
 
         Pattern pattern = Pattern.compile("dat', (\\{.+\\}){1}.+");
         Matcher matcher = pattern.matcher(responseString);
 
         if(matcher.find()) {
-            System.out.println("통과!" + matcher.group(1));
-        }
-        else {
-            System.out.println("안 된단말이다.");
+            logger.debug("통과!" + matcher.group(1));
+        } else {
+            logger.debug("안 된단말이다.");
         }
         try {
             ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
 
-            String splitString = responseString.split("dat', ")[1].split("\\);")[0];
+            map = mapper.readValue(matcher.group(1), new TypeReference<Map<Object, Object>>() {});
 
-            System.out.println(splitString);
-            map = mapper.readValue(splitString, new TypeReference<Map<Object, Object>>() {
-            });
+            logger.debug(map);
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        for (String key : map.keySet()) {
-            logger.debug(map.get(key));
         }
     }
 
