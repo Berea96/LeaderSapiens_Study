@@ -91,10 +91,6 @@ public class BaseballScheduleParser {
                     baseballScheduleMap.put(id++ + "", baseballSchedule);
                 }
             }
-
-            for(String keySet : baseballScheduleMap.keySet()) {
-               logger.debug(baseballScheduleMap.get(keySet));
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }
