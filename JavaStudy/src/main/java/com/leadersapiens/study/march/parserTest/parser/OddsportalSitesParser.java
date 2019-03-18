@@ -79,3 +79,8 @@ public class OddsportalSitesParser extends TimerTask {
         timer1.scheduleAtFixedRate(oddsportalSitesParser, 0, 1000 * 10);
     }
 }
+
+//자만하지말자.
+//오만하지말자.
+//항상겸손하자.
+//매일매일배우자.
