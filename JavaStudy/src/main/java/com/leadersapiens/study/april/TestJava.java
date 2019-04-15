@@ -2,9 +2,11 @@ package com.leadersapiens.study.april;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Year;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class TestJava {
 
@@ -32,9 +34,10 @@ public class TestJava {
 
         System.out.println(System.currentTimeMillis());
         System.out.println(seoulDateTime.toEpochSecond() * 1000);
-        System.out.println((seoulDateTime.toEpochSecond() * 1000) - (1000 * 60 * 60 * (4 - 9)));
+        System.out.println(seoulDateTime.toEpochSecond() * 1000 + (1000 * 60 * 60 * 24));
+        System.out.println((seoulDateTime.toEpochSecond() * 1000) - (1000 * 60 * 60 * 4));
 
-        System.out.println((char)20);
+
     }
 
 }
