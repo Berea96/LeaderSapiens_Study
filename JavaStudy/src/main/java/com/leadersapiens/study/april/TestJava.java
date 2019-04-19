@@ -37,7 +37,7 @@ public class TestJava {
         System.out.println(seoulDateTime.toEpochSecond() * 1000 + (1000 * 60 * 60 * 24));
         System.out.println((seoulDateTime.toEpochSecond() * 1000) - (1000 * 60 * 60 * 4));
 
-
+        System.out.println(String.format("%s", (char) 20) + "asd");
     }
 
 }
